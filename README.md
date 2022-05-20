@@ -1,18 +1,7 @@
-# organizations-prototyping
+# Consolidated Billing & Account Level Billing show case
 
-## Pain Points Overview
-Scaled customer who has multiple lines of business (LOB), especially business cross regions, or multiple system environments, e.g. UAT, SIT, Dev, Pre-Prod, Prod etc. always has multiple aws accounts to host these workloads, for easy of use, as well as to minimize the blase radius. However, this muti-account structure makes it difficult to operate and maintain unifiably. Plus, this kind of account structure makes billing & payment job much more complicated. 
+## Please visit the link below to have a more detailed explanation on the billing structure after Organizations is activated.
 
-Another issue the multi-account structure causes is that the legacy provisioned direct connection between an aws account and IDC cannot be shared with other accounts. 
+https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-activity.html
 
-Aws Organizations together with Single-Sign-On (SSO for short) provides a perfect solution to make it possible to achieve single sign on of different accounts under the umbrella account, as well as to achieve a consolidated billing and payment of all the accounts (Pls notice: after Organizations is initiated, the single account level billing could also be viewed by logining to that account, but cannot be paid through that account, could be paid through the umbrella account only).
-
-Moreover, the Direct Connect instance could be shared between different accounts by associating the direct connect gateway to the virtual private gateways of other accounts.
-
-## Table of Contents
-- [1. Architecture Design](https://github.com/symeta/organizations-prototyping/tree/Architecture-Design)
-- [2. Organizations Initialization](https://github.com/symeta/organizations-prototyping/tree/organization-initialization)
-- [3. SSO Initialization](https://github.com/symeta/organizations-prototyping/tree/sso-initialization)
-- [4. SSO to multi-accounts show case](https://github.com/symeta/organizations-prototyping/tree/sso-to-multi-accounts-show-case)
-- [5. Consolidated Billing & Account Level Billing show case]()
-- [6. Direct Connect Gateway Sharing Configuration]()
+<img width="686" alt="Screen Shot 2022-05-20 at 9 52 05 PM" src="https://user-images.githubusercontent.com/97269758/169542566-8dd92d0f-c89f-43dd-9f76-37b8d479ee44.png">
