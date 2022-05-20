@@ -6,3 +6,5 @@
 <img width="954" alt="Single Sign-On copy" src="https://user-images.githubusercontent.com/97269758/169541349-fcb18daa-401c-4008-a976-2e5385dace6c.png">
 
 By clicking the "trade1", you can continue access the trade1 account.
+
+<img width="1227" alt="New AWS Console Home copy" src="https://user-images.githubusercontent.com/97269758/169541860-8e21070d-e82a-488c-8d3f-165ae31fba95.png">
