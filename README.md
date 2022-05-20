@@ -15,4 +15,4 @@ Moreover, the Direct Connect instance could be shared between different accounts
 - [3. SSO Initialization](https://github.com/symeta/organizations-prototyping/tree/sso-initialization)
 - [4. SSO to multi-accounts show case](https://github.com/symeta/organizations-prototyping/tree/sso-to-multi-accounts-show-case)
 - [5. Consolidated Billing & Account Level Billing show case](https://github.com/symeta/organizations-prototyping/tree/Consolidated-Billing-&-Account-Level-Billing-show-case)
-- [6. Direct Connect Gateway Sharing Configuration]()
+- [6. Direct Connect Gateway Sharing Configuration](https://github.com/symeta/organizations-prototyping/tree/Direct-Connect-Gateway-Sharing-Configuration)
