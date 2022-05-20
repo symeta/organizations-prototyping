@@ -1,18 +1,21 @@
-# organizations-prototyping
+# Direct Connect Gateway Sharing Configuration
 
-## Pain Points Overview
-Scaled customer who has multiple lines of business (LOB), especially business cross regions, or multiple system environments, e.g. UAT, SIT, Dev, Pre-Prod, Prod etc. always has multiple aws accounts to host these workloads, for easy of use, as well as to minimize the blase radius. However, this muti-account structure makes it difficult to operate and maintain unifiably. Plus, this kind of account structure makes billing & payment job much more complicated. 
+# 1. Pre-requisite
+Member Account1 has Direct Connect Gateway, Virtual Private Gateway (the virtual private gateway should be associated with the Direct Connect Gateway, and be attached with VPC)
 
-Another issue the multi-account structure causes is that the legacy provisioned direct connection between an aws account and IDC cannot be shared with other accounts. 
+Member Account2 has Virtual Private Gateway (the virtual private gateway should be associated with the Direct Connect Gateway, and be attached with VPC)
 
-Aws Organizations together with Single-Sign-On (SSO for short) provides a perfect solution to make it possible to achieve single sign on of different accounts under the umbrella account, as well as to achieve a consolidated billing and payment of all the accounts (Pls notice: after Organizations is initiated, the single account level billing could also be viewed by logining to that account, but cannot be paid through that account, could be paid through the umbrella account only).
+# 2. Open Direct Connect Console
 
-Moreover, the Direct Connect instance could be shared between different accounts by associating the direct connect gateway to the virtual private gateways of other accounts.
+<img width="878" alt="Screen Shot 2022-05-20 at 10 00 39 PM" src="https://user-images.githubusercontent.com/97269758/169544183-729f3ce0-d600-4f4e-b0fa-1199aebfc9a4.png">
 
-## Table of Contents
-- [1. Architecture Design](https://github.com/symeta/organizations-prototyping/tree/Architecture-Design)
-- [2. Organizations Initialization](https://github.com/symeta/organizations-prototyping/tree/organization-initialization)
-- [3. SSO Initialization](https://github.com/symeta/organizations-prototyping/tree/sso-initialization)
-- [4. SSO to multi-accounts show case](https://github.com/symeta/organizations-prototyping/tree/sso-to-multi-accounts-show-case)
-- [5. Consolidated Billing & Account Level Billing show case](https://github.com/symeta/organizations-prototyping/tree/Consolidated-Billing-&-Account-Level-Billing-show-case)
-- [6. Direct Connect Gateway Sharing Configuration]()
+# 3. Open Virtual private gateways tab to config the Direct Connect gateway associations
+<img width="1034" alt="Screen Shot 2022-05-20 at 10 01 03 PM" src="https://user-images.githubusercontent.com/97269758/169544254-14aa5a06-5d31-4d6a-ad8a-19f14820bc74.png">
+
+# 4. Config the Direct Connect Gateway association
+
+<img width="851" alt="Screen Shot 2022-05-20 at 10 02 08 PM" src="https://user-images.githubusercontent.com/97269758/169544485-e20a78d9-3d5b-4169-aea4-2879259a08a1.png">
+
+
+For detailed information, please visit the link below:
+https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways-intro.html
