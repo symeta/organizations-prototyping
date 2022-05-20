@@ -10,7 +10,7 @@ Aws Organizations together with Single-Sign-On (SSO for short) provides a perfec
 Moreover, the Direct Connect instance could be shared between different accounts by associating the direct connect gateway to the virtual private gateways of other accounts.
 
 ## Table of Contents
-- [1. Architecture Design]()
+- [1. Architecture Design](https://github.com/symeta/organizations-prototyping/tree/Architecture-Design)
 - [2. Organizations Initialization]()
 - [3. SSO Initialization]()
 - [4. SSO to multi-accounts show case]()
