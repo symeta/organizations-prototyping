@@ -32,3 +32,34 @@ Create a permission set that gives the user the power user privileges.
 <img width="2212" alt="Screen Shot 2022-05-20 at 2 16 15 PM" src="https://user-images.githubusercontent.com/97269758/169539866-70dcde36-967a-478a-b81a-022333794ab6.png">
 
 After finishing the initialization, the user "John Smith" is able to get access to the two accounts under the organization through SSO.
+
+## 6. Poweruser Permission Explanation
+Poweruser policy permits all resources excluding most of IAM, organizations, and accounts. The detailed policy for poweruser is as follows:
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "NotAction": [
+                "iam:*",
+                "organizations:*",
+                "account:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateServiceLinkedRole",
+                "iam:DeleteServiceLinkedRole",
+                "iam:ListRoles",
+                "organizations:DescribeOrganization",
+                "account:ListRegions"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
