@@ -18,5 +18,3 @@ Moreover, the Direct Connect instance could be shared between different accounts
 - [5. Consolidated Billing & Account Level Billing show case](https://github.com/symeta/organizations-prototyping/tree/Consolidated-Billing-&-Account-Level-Billing-show-case)
 - [6. Direct Connect Gateway Sharing Configuration](https://github.com/symeta/organizations-prototyping/tree/Direct-Connect-Gateway-Sharing-Configuration)
 
-
-![fair-share_weights](https://user-images.githubusercontent.com/97269758/170849503-c13221a7-3358-49f4-8656-c606709a2ce6.gif)
